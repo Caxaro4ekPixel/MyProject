@@ -1,0 +1,8 @@
+D:\VSProject\HellowWorlde\HellowWorlde\bin\Debug\HellowWorlde.exe.config
+D:\VSProject\HellowWorlde\HellowWorlde\bin\Debug\HellowWorlde.exe
+D:\VSProject\HellowWorlde\HellowWorlde\bin\Debug\HellowWorlde.pdb
+D:\VSProject\HellowWorlde\HellowWorlde\obj\Debug\HellowWorlde.csproj.AssemblyReference.cache
+D:\VSProject\HellowWorlde\HellowWorlde\obj\Debug\HellowWorlde.csproj.SuggestedBindingRedirects.cache
+D:\VSProject\HellowWorlde\HellowWorlde\obj\Debug\HellowWorlde.csproj.CoreCompileInputs.cache
+D:\VSProject\HellowWorlde\HellowWorlde\obj\Debug\HellowWorlde.exe
+D:\VSProject\HellowWorlde\HellowWorlde\obj\Debug\HellowWorlde.pdb
