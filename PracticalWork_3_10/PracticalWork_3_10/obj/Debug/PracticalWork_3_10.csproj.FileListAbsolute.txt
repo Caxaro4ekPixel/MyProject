@@ -1,0 +1,8 @@
+D:\VSProject\PracticalWork_3_10\PracticalWork_3_10\bin\Debug\PracticalWork_3_10.exe.config
+D:\VSProject\PracticalWork_3_10\PracticalWork_3_10\bin\Debug\PracticalWork_3_10.exe
+D:\VSProject\PracticalWork_3_10\PracticalWork_3_10\bin\Debug\PracticalWork_3_10.pdb
+D:\VSProject\PracticalWork_3_10\PracticalWork_3_10\obj\Debug\PracticalWork_3_10.csproj.AssemblyReference.cache
+D:\VSProject\PracticalWork_3_10\PracticalWork_3_10\obj\Debug\PracticalWork_3_10.csproj.SuggestedBindingRedirects.cache
+D:\VSProject\PracticalWork_3_10\PracticalWork_3_10\obj\Debug\PracticalWork_3_10.csproj.CoreCompileInputs.cache
+D:\VSProject\PracticalWork_3_10\PracticalWork_3_10\obj\Debug\PracticalWork_3_10.exe
+D:\VSProject\PracticalWork_3_10\PracticalWork_3_10\obj\Debug\PracticalWork_3_10.pdb

@@ -30,8 +30,7 @@ namespace Practical_work_2_7
                 );
 
             Console.ReadKey();
-            Console.WriteLine(
-                $"Средний балл по всем придметом: {scoresAverage}");
+            Console.WriteLine($"Средний балл по всем придметом: {scoresAverage}");
             Console.ReadKey();
         }
     }
