@@ -44,6 +44,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Program.cs" />
+    <Compile Include="ThirdTask.cs" />
+    <Compile Include="FourthTask.cs" />
+    <Compile Include="SecondTask.cs" />
+    <Compile Include="FirstTask.cs" />
+    <Compile Include="FifthTask.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

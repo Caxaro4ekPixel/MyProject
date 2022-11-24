@@ -4,10 +4,11 @@ namespace PracticalWork_3_10
 {
     internal class FifthTask
     {
-        static void Main(string[] args)
+        public static void FifthTaskMain()
         {
             Console.WriteLine("Задание 5:");
             FifthTaskMet();
+            Console.WriteLine("-----------------------------------------");
         }
 
         static void FifthTaskMet()
