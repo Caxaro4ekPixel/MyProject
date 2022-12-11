@@ -1,0 +1,8 @@
+D:\VSProject\Practica_Work_5_5\Practica_Work_5_5\bin\Debug\Practica_Work_5_5.exe.config
+D:\VSProject\Practica_Work_5_5\Practica_Work_5_5\bin\Debug\Practica_Work_5_5.exe
+D:\VSProject\Practica_Work_5_5\Practica_Work_5_5\bin\Debug\Practica_Work_5_5.pdb
+D:\VSProject\Practica_Work_5_5\Practica_Work_5_5\obj\Debug\Practica_Work_5_5.csproj.AssemblyReference.cache
+D:\VSProject\Practica_Work_5_5\Practica_Work_5_5\obj\Debug\Practica_Work_5_5.csproj.SuggestedBindingRedirects.cache
+D:\VSProject\Practica_Work_5_5\Practica_Work_5_5\obj\Debug\Practica_Work_5_5.csproj.CoreCompileInputs.cache
+D:\VSProject\Practica_Work_5_5\Practica_Work_5_5\obj\Debug\Practica_Work_5_5.exe
+D:\VSProject\Practica_Work_5_5\Practica_Work_5_5\obj\Debug\Practica_Work_5_5.pdb
