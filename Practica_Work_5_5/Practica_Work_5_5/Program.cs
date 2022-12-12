@@ -13,8 +13,9 @@ namespace Practica_Work_5_5
             Console.WriteLine("Введите набор слов через пробел");
             string text = Console.ReadLine();
             ShowText(text);
-            Reverse(text);
+            string tempRevText = Reverse(text);
 
+            Console.WriteLine(tempRevText);
             Console.ReadKey();
         }
 
@@ -32,7 +33,7 @@ namespace Practica_Work_5_5
             }
         }
 
-        static void Reverse(string text)
+        static string Reverse(string text)
         {
             string[] textSplit = SplitText(text);
             string res = "";
@@ -40,7 +41,7 @@ namespace Practica_Work_5_5
             for(int i = textSplit.Length - 1; i >= 0; i--)
                 res+= textSplit[i] + " ";
 
-            Console.WriteLine(res);
+            return res;
         }
     }
 }
