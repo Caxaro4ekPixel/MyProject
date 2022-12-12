@@ -12,13 +12,9 @@ namespace Practica_Work_5_5
         {
             Console.WriteLine("Введите набор слов через пробел");
             string text = Console.ReadLine();
+            ShowText(text);
+            Reverse(text);
 
-            string[] splitText = SplitText(text);
-
-
-
-            ShowText(splitText);
-            Console.WriteLine(Reverse(splitText));
             Console.ReadKey();
         }
 
@@ -27,22 +23,24 @@ namespace Practica_Work_5_5
             return text.Split(' ');
         }
 
-        static void ShowText(string[] text)
+        static void ShowText(string text)
         {
-            for(int i = 0; i < text.Length; i++)
+            string[] textSplit = SplitText(text);
+            for (int i = 0; i < textSplit.Length; i++)
             {
-                Console.WriteLine(text[i]);
+                Console.WriteLine(textSplit[i]);
             }
         }
 
-        static string Reverse(string[] text)
+        static void Reverse(string text)
         {
+            string[] textSplit = SplitText(text);
             string res = "";
 
-            for(int i = text.Length - 1; i >= 0; i--)
-                res+= text[i] + " ";
+            for(int i = textSplit.Length - 1; i >= 0; i--)
+                res+= textSplit[i] + " ";
 
-            return res;
+            Console.WriteLine(res);
         }
     }
 }
