@@ -1,0 +1,8 @@
+D:\VSProject\PractiaclWork_6_6\PractiaclWork_6_6\bin\Debug\PractiaclWork_6_6.exe.config
+D:\VSProject\PractiaclWork_6_6\PractiaclWork_6_6\bin\Debug\PractiaclWork_6_6.exe
+D:\VSProject\PractiaclWork_6_6\PractiaclWork_6_6\bin\Debug\PractiaclWork_6_6.pdb
+D:\VSProject\PractiaclWork_6_6\PractiaclWork_6_6\obj\Debug\PractiaclWork_6_6.csproj.AssemblyReference.cache
+D:\VSProject\PractiaclWork_6_6\PractiaclWork_6_6\obj\Debug\PractiaclWork_6_6.csproj.SuggestedBindingRedirects.cache
+D:\VSProject\PractiaclWork_6_6\PractiaclWork_6_6\obj\Debug\PractiaclWork_6_6.csproj.CoreCompileInputs.cache
+D:\VSProject\PractiaclWork_6_6\PractiaclWork_6_6\obj\Debug\PractiaclWork_6_6.exe
+D:\VSProject\PractiaclWork_6_6\PractiaclWork_6_6\obj\Debug\PractiaclWork_6_6.pdb
