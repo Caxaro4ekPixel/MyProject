@@ -14,13 +14,14 @@ namespace PractiaclWork_6_6
         static void Main(string[] args)
         {
             string filePath = ".\\text.txt";
-            while (true)
+            bool is_work = true;
+            while (is_work)
             {
-                Console.WriteLine("Введите 1, что бы просмотреть все данные. Введите 2, что бы добавить данные");
+                Console.WriteLine("Введите 1, что бы просмотреть все данные. Введите 2, что бы добавить данные. Введите 3 для выхода из программы.");
                 int task = int.Parse(Console.ReadLine());
 
                 if (!File.Exists(filePath))
-                    File.Create(filePath);
+                    File.Create(filePath).Close();
 
                 switch (task)
                 {
@@ -29,6 +30,9 @@ namespace PractiaclWork_6_6
                         break;
                     case 2:
                         AddData(filePath);
+                        break;
+                    case 3:
+                        is_work = false;
                         break;
                 }
             }
