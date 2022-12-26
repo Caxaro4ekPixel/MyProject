@@ -1,0 +1,8 @@
+D:\VSProject\Practical work 7_8\Practical work 7_8\bin\Debug\Practical work 7_8.exe.config
+D:\VSProject\Practical work 7_8\Practical work 7_8\bin\Debug\Practical work 7_8.exe
+D:\VSProject\Practical work 7_8\Practical work 7_8\bin\Debug\Practical work 7_8.pdb
+D:\VSProject\Practical work 7_8\Practical work 7_8\obj\Debug\Practical work 7_8.csproj.AssemblyReference.cache
+D:\VSProject\Practical work 7_8\Practical work 7_8\obj\Debug\Practical work 7_8.csproj.SuggestedBindingRedirects.cache
+D:\VSProject\Practical work 7_8\Practical work 7_8\obj\Debug\Practical work 7_8.csproj.CoreCompileInputs.cache
+D:\VSProject\Practical work 7_8\Practical work 7_8\obj\Debug\Practical work 7_8.exe
+D:\VSProject\Practical work 7_8\Practical work 7_8\obj\Debug\Practical work 7_8.pdb

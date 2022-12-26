@@ -13,29 +13,33 @@ namespace PractiaclWork_6_6
 
         static void Main(string[] args)
         {
-            string filePath = ".\\text.txt";
-            bool is_work = true;
-            while (is_work)
-            {
-                Console.WriteLine("Введите 1, что бы просмотреть все данные. Введите 2, что бы добавить данные. Введите 3 для выхода из программы.");
-                int task = int.Parse(Console.ReadLine());
+            int[] numbers = { 1, 3, 4, 9, 2 };
+            int numToRemove = 4;
+            numbers = numbers.Where(val => val != numToRemove).ToArray();
+            Console.ReadKey();
+            //string filePath = ".\\text.txt";
+            //bool is_work = true;
+            //while (is_work)
+            //{
+            //    Console.WriteLine("Введите 1, что бы просмотреть все данные. Введите 2, что бы добавить данные. Введите 3 для выхода из программы.");
+            //    int task = int.Parse(Console.ReadLine());
 
-                if (!File.Exists(filePath))
-                    File.Create(filePath).Close();
+            //    if (!File.Exists(filePath))
+            //        File.Create(filePath).Close();
 
-                switch (task)
-                {
-                    case 1:
-                        ShowData(filePath);
-                        break;
-                    case 2:
-                        AddData(filePath);
-                        break;
-                    case 3:
-                        is_work = false;
-                        break;
-                }
-            }
+            //    switch (task)
+            //    {
+            //        case 1:
+            //            ShowData(filePath);
+            //            break;
+            //        case 2:
+            //            AddData(filePath);
+            //            break;
+            //        case 3:
+            //            is_work = false;
+            //            break;
+            //    }
+            //}
         }
 
         static void ShowData(string filePath)
