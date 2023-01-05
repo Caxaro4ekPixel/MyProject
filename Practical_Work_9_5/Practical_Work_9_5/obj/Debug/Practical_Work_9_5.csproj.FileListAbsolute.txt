@@ -1,0 +1,16 @@
+D:\VSProject\Practical_Work_9_5\Practical_Work_9_5\bin\Debug\Practical_Work_9_5.exe.config
+D:\VSProject\Practical_Work_9_5\Practical_Work_9_5\bin\Debug\Practical_Work_9_5.exe
+D:\VSProject\Practical_Work_9_5\Practical_Work_9_5\bin\Debug\Practical_Work_9_5.pdb
+D:\VSProject\Practical_Work_9_5\Practical_Work_9_5\obj\Debug\Practical_Work_9_5.csproj.AssemblyReference.cache
+D:\VSProject\Practical_Work_9_5\Practical_Work_9_5\obj\Debug\Practical_Work_9_5.csproj.SuggestedBindingRedirects.cache
+D:\VSProject\Practical_Work_9_5\Practical_Work_9_5\obj\Debug\MainWindow.g.cs
+D:\VSProject\Practical_Work_9_5\Practical_Work_9_5\obj\Debug\App.g.cs
+D:\VSProject\Practical_Work_9_5\Practical_Work_9_5\obj\Debug\Practical_Work_9_5_MarkupCompile.cache
+D:\VSProject\Practical_Work_9_5\Practical_Work_9_5\obj\Debug\Practical_Work_9_5_MarkupCompile.lref
+D:\VSProject\Practical_Work_9_5\Practical_Work_9_5\obj\Debug\MainWindow.baml
+D:\VSProject\Practical_Work_9_5\Practical_Work_9_5\obj\Debug\Practical_Work_9_5.g.resources
+D:\VSProject\Practical_Work_9_5\Practical_Work_9_5\obj\Debug\Practical_Work_9_5.Properties.Resources.resources
+D:\VSProject\Practical_Work_9_5\Practical_Work_9_5\obj\Debug\Practical_Work_9_5.csproj.GenerateResource.cache
+D:\VSProject\Practical_Work_9_5\Practical_Work_9_5\obj\Debug\Practical_Work_9_5.csproj.CoreCompileInputs.cache
+D:\VSProject\Practical_Work_9_5\Practical_Work_9_5\obj\Debug\Practical_Work_9_5.exe
+D:\VSProject\Practical_Work_9_5\Practical_Work_9_5\obj\Debug\Practical_Work_9_5.pdb

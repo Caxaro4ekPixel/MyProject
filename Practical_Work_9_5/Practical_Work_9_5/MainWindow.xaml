@@ -1,0 +1,17 @@
+﻿<Window x:Class="Practical_Work_9_5.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Practical_Work_9_5"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TextBox Name="TextBox1" HorizontalAlignment="Center" Margin="0,10,0,0" TextWrapping="Wrap" Text="Введите текст, разделяя слова пробелами." VerticalAlignment="Top" Width="780" Height="126"/>
+        <Button Name="ButtonTask1" Content="Разделить предложение по пробелам" HorizontalAlignment="Left" Margin="10,141,0,0" VerticalAlignment="Top" Height="76" Width="350" Click="ButtonTask1_Click"/>
+        <Button Name="ButtonTask2" Content="Перевернуть предложение" HorizontalAlignment="Left" Margin="440,141,0,0" VerticalAlignment="Top" Height="76" Width="350" Click="ButtonTask2_Click"/>
+        <ListBox Name="ListboxTask1" d:ItemsSource="{d:SampleData ItemCount=0}" Margin="10,222,440,10"/>
+        <Label Name="LableTask2" Content="Тут будет ваш текст)" HorizontalAlignment="Left" Margin="440,222,0,0" VerticalAlignment="Top" Height="202" Width="350"/>
+
+    </Grid>
+</Window>
