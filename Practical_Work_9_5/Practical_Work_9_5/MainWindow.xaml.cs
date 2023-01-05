@@ -33,8 +33,7 @@ namespace Practical_Work_9_5
 
         private void ButtonTask1_Click(object sender, RoutedEventArgs e)
         {
-            string[] str = TextBox1.Text.Split(' ');
-            ListboxTask1.ItemsSource = str;
+            ListboxTask1.ItemsSource = TextBox1.Text.Split(' ');
         }
     }
 }
