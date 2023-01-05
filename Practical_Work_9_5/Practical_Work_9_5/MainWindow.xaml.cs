@@ -24,11 +24,7 @@ namespace Practical_Work_9_5
 
         private void ButtonTask2_Click(object sender, RoutedEventArgs e)
         {
-            string[] str = TextBox1.Text.Split(' ');
-            string temp = "";
-            for (int i = str.Length - 1; i >= 0; i--)
-                temp += str[i] + " ";
-            LableTask2.Content = temp;
+            LableTask2.Content = string.Join(" ", TextBox1.Text.Split(' ').Reverse().ToArray());
         }
 
         private void ButtonTask1_Click(object sender, RoutedEventArgs e)
