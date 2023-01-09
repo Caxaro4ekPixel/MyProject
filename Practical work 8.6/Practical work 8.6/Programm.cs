@@ -10,8 +10,8 @@ namespace Practical_work_8._6
     {
         static void Main(string[] args)
         {
-            //Task1 task1 = new Task1();
-            //task1.Task1Main();
+            Task1 task1 = new Task1();
+            task1.Task1Main();
 
             //Task2 task2 = new Task2();
             //task2.Task2Main();
@@ -19,8 +19,8 @@ namespace Practical_work_8._6
             //Task3 task3 = new Task3();
             //task3.Task3Main();
 
-            Task4 task4 = new Task4();
-            task4.Task4Main();
+            //Task4 task4 = new Task4();
+            //task4.Task4Main();
 
             Console.ReadKey();
         }

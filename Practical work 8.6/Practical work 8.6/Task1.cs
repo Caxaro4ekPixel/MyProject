@@ -27,8 +27,7 @@ namespace Practical_work_8._6
 
         static List<int> DelItemList(List<int> list)
         {
-            list.RemoveAll(x => x < 25);
-            list.RemoveAll(x => x > 50);
+            list.RemoveAll(x => x < 25 || x > 50);
             return list;
         }
 
