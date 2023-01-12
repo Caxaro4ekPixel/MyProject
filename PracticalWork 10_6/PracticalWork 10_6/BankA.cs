@@ -16,6 +16,10 @@ namespace PracticalWork_10_6
         private string middleName;
         private string phoneNumber;
         private string pasNumber;
+        private DateTime dataEdit;
+        private string editComment;
+        private string typeEdit;
+        private string userEdit;
         public BankA(string surName, string name, string middleName, string phoneNumber, string pasNumber)
         {
             this.surName = surName;
@@ -35,8 +39,14 @@ namespace PracticalWork_10_6
                 return this.phoneNumber; 
             } 
             set { 
-                if (value != "") 
-                    this.phoneNumber = value; 
+                if (value != "")
+                {
+                    this.phoneNumber = value;
+                    this.dataEdit = DateTime.Now;
+                    this.typeEdit = "Изменение номера";
+                    this.editComment = $"(изменено с {this.phoneNumber} на {value})";
+                    this.userEdit = "Менеджер";
+                }
                 else
                     throw new Exception("Поле <<Номер телефона>> не может быть пустым");
             } 
@@ -46,7 +56,15 @@ namespace PracticalWork_10_6
         public void GetUserInfo()
         {
             string temp = Regex.Replace(this.pasNumber, ".", "*");
-            Console.WriteLine($"Имя: {this.name}\nФамилия: {this.surName}\nОтчество: {this.middleName}\nНомер телефона: {this.phoneNumber}\nНомер паспорта: {temp}");
+            Console.WriteLine($"Имя: {this.name}\n" +
+                $"Фамилия: {this.surName}\n" +
+                $"Отчество: {this.middleName}\n" +
+                $"Номер телефона: {this.phoneNumber}\n" +
+                $"Номер паспорта: {temp}\n" +
+                $"Дата изменения: {this.dataEdit}\n" +
+                $"Тип изменения: {this.typeEdit}\n" +
+                $"Комментприй: {this.editComment}\n" +
+                $"Кто изменил: {this.userEdit}");
         }
     }
 }
