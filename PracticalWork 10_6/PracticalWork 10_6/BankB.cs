@@ -7,49 +7,23 @@ using System.Threading.Tasks;
 
 namespace PracticalWork_10_6
 {
-    internal class BankB : BankA
+    internal class BankB : Person
     {
-        private string address;
-        private DateTime dataEdit;
-        private string editComment;
-        private string typeEdit;
-        private string userEdit;
-        public string Address
+        public BankB(string lastName, string firstName, string midleName, string phoneNumber, string passportNum) : base(lastName, firstName, midleName, phoneNumber, passportNum)
         {
-            get { return this.address; }
-            set 
-            {
-                if (value != "")
-                {
-                    this.address = value;
-                    this.dataEdit = DateTime.Now;
-                    this.typeEdit = "Изменение адреса";
-                    this.editComment = $"(изменено с {this.address} на {value})";
-                    this.userEdit = "Консультант";
-                }
-                else
-                    throw new Exception("Поле <<Адрес>> не может быть пустым");
-            }
-        }
-        public BankB(string surName, string name, string middleName, string phoneNumber, string pasNumber, string address) : base(surName, name, middleName, phoneNumber, pasNumber)
-        {
-            this.address = address;
         }
 
-        public void GetUserInfoB()
+        public void ShowInfoUser()
         {
-            string temp = Regex.Replace(this.PasNumber, ".", "*");
-            Console.WriteLine(
-                $"Имя: {this.Name}\n" +
-                $"Фамилия: {this.SurName}\n" +
-                $"Отчество: {this.MiddleName}\n" +
-                $"Номер телефона: {this.PhoneNumber}\n" +
-                $"Номер паспорта: {temp}\n" +
-                $"Адрес: {this.address}" +
-                $"Дата изменения: {this.dataEdit}\n" +
-                $"Тип изменения: {this.typeEdit}\n" +
-                $"Комментприй: {this.editComment}\n" +
-                $"Кто изменил: {this.userEdit}");
+            Console.WriteLine($"Имя: {FirstName}\n" +
+                $"Фамилия: {LastName}\n" +
+                $"Отчество: {MidleName}\n" +
+                $"Номер телефона: {PhoneNumber}\n" +
+                $"Номер паспорта: {PassportNum}\n" +
+                $"Дата изменения: {DateEdit}\n" +
+                $"Тип изменения: {DataChangedType}\n" +
+                $"Комментарий: {DataChanged}\n" +
+                $"Кто изменил: {DataChangedUser}");
         }
     }
 }

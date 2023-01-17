@@ -13,136 +13,96 @@ namespace PracticalWork_10_6
             TempData tempData = new TempData();
             Random random = new Random();
 
-
-            List<BankA> bankA = new List<BankA>();
-
-            for (int i = 0; i < 8; i++)
+            bool flag1 = true; 
+            while (flag1)
             {
-                bankA.Add(new BankA(
-                    surName: tempData.tempSurName[random.Next(0,8)],
-                    name: tempData.tempName[random.Next(0,8)],
-                    middleName: tempData.tempMiddleName[random.Next(0,8)],
-                    phoneNumber: tempData.tempPhoneNumber[random.Next(0,8)],
-                    pasNumber: tempData.tempPasNumber[random.Next(0,8)]
-                    ));
-            }
-
-            bool flag = true;
-
-            Console.WriteLine("Кто работает?\n1 - консультант\n2 - менеджер");
-            string worker = Console.ReadLine();
-            if (worker == "1")
-            {
-                while (flag)
+                bool flag2 = true;
+                Console.WriteLine("Введите кто работает: 1 - менеджер, 2 - консультант.");
+                if (Console.ReadLine() == "1")
                 {
-                    Console.WriteLine("Введите:\n1, что бы просмотреть данные.\n2, что бы изменить номер.\n3, что бы выйти.");
-                    switch (Console.ReadLine())
+                    List<BankA> persons = new List<BankA>();
+                    while (flag2)
                     {
-                        case "1":
-                            foreach(var i in bankA)
-                            {
-                                i.GetUserInfo();
-                                Console.WriteLine("------------------------------------------------");
-                            }
-                            break;
-                        case "2":
-                            Console.WriteLine("Введите номер пользователя:");
-                            string temp = Console.ReadLine();
-                            foreach (var i in bankA)
-                                if (temp == i.PhoneNumber)
+                        Console.WriteLine("1, просмотреть все данные\n2, добавить новые\n3, изменить номер телефона\n4, выйти");
+                        switch (Console.ReadLine())
+                        {
+                            case "1":
+                                foreach (var i in persons)
+                                    i.ShowInfoUser();
+                                break;
+                            case "2":
+                                persons.Add(new BankA(
+                                        lastName: tempData.tempSurName[random.Next(0, 8)],
+                                        firstName: tempData.tempName[random.Next(0, 8)],
+                                        midleName: tempData.tempMiddleName[random.Next(0, 8)],
+                                        phoneNumber: tempData.tempPhoneNumber[random.Next(0, 8)],
+                                        passportNum: tempData.tempPasNumber[random.Next(0, 8)]
+                                        ));
+                                Console.WriteLine("Добавлено!");
+                                break;
+                            case "3":
+                                Console.WriteLine("Введите номер телефона который хотите изменить: ");
+                                string oldPhoneNum = Console.ReadLine();
+                                foreach (var i in persons)
                                 {
-                                    Console.WriteLine("Введите номер на который вы хотите изменить:");
-                                    i.PhoneNumber = Console.ReadLine();
-                                }
-                            break;
-                        case "3":
-                            flag = false;
-                            break;
-                        default:
-                            Console.WriteLine("Вы ввели неверное число!");
-                            break;
-                    }
-                }
-            }
-            else if (worker == "2")
-            {
-                List<BankB> bankB = new List<BankB>();
-                while (flag)
-                {
-                    Console.WriteLine("Введите:\n1, что бы добавить данные.\n2, что бы просмотреть все данные\n3, что бы изменить данные\n4, что бы выйти.");
-                    switch (Console.ReadLine())
-                    {
-                        case "1":
-                            //Console.WriteLine("Введите данные для создания нового пользователя!");
-                            //Console.WriteLine("Введите фамилию: ");
-                            //string surName = Console.ReadLine();
-                            //Console.WriteLine("Введите имя: ");
-                            //string name = Console.ReadLine();
-                            //Console.WriteLine("Введите отчество: ");
-                            //string middleName = Console.ReadLine
-                            //Console.WriteLine("Введите номер телефона: ");
-                            //string phoneNumber = Console.ReadLine
-                            //Console.WriteLine("Введите номер паспорта: ");
-                            //string pasNumber = Console.ReadLine();
-                            //bankB.Add(new BankB(surName, name, middleName, phoneNumber, pasNumber));
-
-                            bankB.Add(new BankB(surName: tempData.tempSurName[random.Next(0, 8)],
-                                                    name: tempData.tempName[random.Next(0, 8)],
-                                                    middleName: tempData.tempMiddleName[random.Next(0, 8)],
-                                                    phoneNumber: tempData.tempPhoneNumber[random.Next(0, 8)],
-                                                    pasNumber: tempData.tempPasNumber[random.Next(0, 8)],
-                                                    address: tempData.tempAddress[random.Next(0, 8)]));
-                            break; 
-
-                        case "2":
-                            foreach (var i in bankB)
-                            {
-                                i.GetUserInfoB();
-                                Console.WriteLine("------------------------------------------------");
-                            }
-                            break; 
-
-                        case "3":
-                            Console.WriteLine("Что хотите изменить?\n1 - номер телефона\n2 - адрес");
-                            string temp = Console.ReadLine();
-                            if (temp == "1")
-                            {
-                                Console.WriteLine("Введите номер пользователя:");
-                                temp = Console.ReadLine();
-                                foreach (var i in bankB)
-                                    if (temp == i.PhoneNumber)
+                                    if (i.PhoneNumber == oldPhoneNum)
                                     {
-                                        Console.WriteLine("Введите номер на который вы хотите изменить:");
-                                        i.PhoneNumber = Console.ReadLine();
-                                    }
-                            }
-                            else if (temp == "2")
-                            {
-                                Console.WriteLine("Введите номер пользователя:");
-                                temp = Console.ReadLine();
-                                foreach (var i in bankB)
-                                    if (temp == i.PhoneNumber)
-                                    {
-                                        Console.WriteLine("Введите адресс на который вы хотите изменить:");
-                                        i.Address = Console.ReadLine();
+                                        Console.WriteLine("Введите новый номер телефона: ");
+                                        string newPhoneNum = Console.ReadLine();
+                                        i.PhoneNumber = newPhoneNum;
                                     }
                                     else
-                                        Console.WriteLine("Номер не найден!");
+                                        Console.WriteLine("Номер телефона не найден!");
+                                }
+                                break;
+                            case "4":
+                                flag2 = false;
+                                break;
+                        }
+                    }
+                }
+                else
+                {
+                    List<BankB> persons = new List<BankB>();
+                    for (int i = 0; i < 10; i++)
+                    {
+                        persons.Add(new BankB(
+                                        lastName: tempData.tempSurName[random.Next(0, 8)],
+                                        firstName: tempData.tempName[random.Next(0, 8)],
+                                        midleName: tempData.tempMiddleName[random.Next(0, 8)],
+                                        phoneNumber: tempData.tempPhoneNumber[random.Next(0, 8)],
+                                        passportNum: tempData.tempPasNumber[random.Next(0, 8)]
+                                        ));
+                    }
+                    Console.WriteLine("1, просмотреть все данные\n2, изменить номер телефона\n3, выйти");
+                    switch (Console.ReadLine())
+                    {
+                        case "1":
+                            foreach (var i in persons)
+                                i.ShowInfoUser();
+                            break;
+                        case "2":
+                            Console.WriteLine("Введите номер телефона который хотите изменить: ");
+                            string oldPhoneNum = Console.ReadLine();
+                            foreach (var i in persons)
+                            {
+                                if (i.PhoneNumber == oldPhoneNum)
+                                {
+                                    Console.WriteLine("Введите новый номер телефона: ");
+                                    string newPhoneNum = Console.ReadLine();
+                                    i.PhoneNumber = newPhoneNum;
+                                }
+                                else
+                                    Console.WriteLine("Номер телефона не найден!");
                             }
                             break;
-
-
-
-
-                        case "4":
-                            flag = false;
-                            break;
-                        default:
-                            Console.WriteLine("Вы ввели неверное число!");
+                        case "3":
+                            flag2 = false;
                             break;
                     }
                 }
             }
+            
         }
     }
 }

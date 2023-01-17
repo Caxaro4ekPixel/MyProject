@@ -8,63 +8,25 @@ using System.Threading.Tasks;
 
 namespace PracticalWork_10_6
 {
-    internal class BankA
+    internal class BankA : Person
     {
-
-        private string surName;
-        private string name;
-        private string middleName;
-        private string phoneNumber;
-        private string pasNumber;
-        private DateTime dataEdit;
-        private string editComment;
-        private string typeEdit;
-        private string userEdit;
-        public BankA(string surName, string name, string middleName, string phoneNumber, string pasNumber)
+        public BankA(string lastName, string firstName, string midleName, string phoneNumber, string passportNum) : base(lastName, firstName, midleName, phoneNumber, passportNum)
         {
-            this.surName = surName;
-            this.name = name;
-            this.middleName = middleName;
-            this.phoneNumber = phoneNumber;
-            this.pasNumber = pasNumber;
         }
 
-        public string SurName { get { return this.surName; } }
-        public string Name { get { return this.name; } }
-        public string MiddleName { get { return this.middleName; } }
-        public string PhoneNumber 
-        { 
-            get 
-            { 
-                return this.phoneNumber; 
-            } 
-            set { 
-                if (value != "")
-                {
-                    this.phoneNumber = value;
-                    this.dataEdit = DateTime.Now;
-                    this.typeEdit = "Изменение номера";
-                    this.editComment = $"(изменено с {this.phoneNumber} на {value})";
-                    this.userEdit = "Менеджер";
-                }
-                else
-                    throw new Exception("Поле <<Номер телефона>> не может быть пустым");
-            } 
-        }
-        public string PasNumber { get { return this.pasNumber; } }
-
-        public void GetUserInfo()
+        public void ShowInfoUser()
         {
-            string temp = Regex.Replace(this.pasNumber, ".", "*");
-            Console.WriteLine($"Имя: {this.name}\n" +
-                $"Фамилия: {this.surName}\n" +
-                $"Отчество: {this.middleName}\n" +
-                $"Номер телефона: {this.phoneNumber}\n" +
+            string temp = Regex.Replace(PassportNum, ".", "*");
+
+            Console.WriteLine($"Имя: {FirstName}\n" +
+                $"Фамилия: {LastName}\n" +
+                $"Отчество: {MidleName}\n" +
+                $"Номер телефона: {PhoneNumber}\n" +
                 $"Номер паспорта: {temp}\n" +
-                $"Дата изменения: {this.dataEdit}\n" +
-                $"Тип изменения: {this.typeEdit}\n" +
-                $"Комментприй: {this.editComment}\n" +
-                $"Кто изменил: {this.userEdit}");
+                $"Дата изменения: {DateEdit}\n" +
+                $"Тип изменения: {DataChangedType}\n" +
+                $"Комментарий: {DataChanged}\n" +
+                $"Кто изменил: {DataChangedUser}");
         }
     }
 }
