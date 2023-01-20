@@ -109,5 +109,14 @@ namespace Practical_work_11_6
                 foreach (var i in consultants)
                     ListBoxUsers.Items.Add($"{i.FirstName} {i.LastName} {i.MidleName} {i.Phone} ({i.PassportNum})");
         }
+
+        private void Button_Click3(object sender, RoutedEventArgs e)
+        {
+            if (this.is_worker)
+                manegers = manegers.OrderBy(o => o.FirstName).ToList();
+            else 
+                consultants = consultants.OrderBy(o => o.FirstName).ToList();
+            UpdateDataInGrid();
+        }
     }
 }

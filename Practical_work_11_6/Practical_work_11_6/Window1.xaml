@@ -8,9 +8,10 @@
         Title="Window1" Height="450" Width="800">
     <Grid>
         <ListBox Name='ListBoxUsers' d:ItemsSource="{d:SampleData ItemCount=5}" Margin="35,50,35,85"/>
-        <Button Content="Добавить" HorizontalAlignment="Left" Margin="35,354,0,0" VerticalAlignment="Top" Height="60" Width="205" Click="Button_Click"/>
-        <Button Content="Изменить" HorizontalAlignment="Center" Margin="0,354,0,0" VerticalAlignment="Top" Height="60" Width="204" Click="Button_Click1"/>
-        <Button Content="Удалить" HorizontalAlignment="Left" Margin="561,354,0,0" VerticalAlignment="Top" Height="60" Width="204" Click="Button_Click2"/>
+        <Button Content="Добавить" HorizontalAlignment="Left" Margin="35,354,0,0" VerticalAlignment="Top" Height="60" Width="140" Click="Button_Click"/>
+        <Button Content="Изменить" HorizontalAlignment="Left" Margin="225,354,0,0" VerticalAlignment="Top" Height="60" Width="140" Click="Button_Click1"/>
+        <Button Content="Удалить" HorizontalAlignment="Left" Margin="425,354,0,0" VerticalAlignment="Top" Height="60" Width="140" Click="Button_Click2"/>
+        <Button Content="Сортировать" HorizontalAlignment="Left" Margin="625,354,0,0" VerticalAlignment="Top" Height="60" Width="140" Click="Button_Click3"/>
 
     </Grid>
 </Window>
